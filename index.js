@@ -21,6 +21,9 @@ app.get('/', (req, res) => {
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Route API
+app.use('/api/fileinfo', require('./routes/api/file'));
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Servicio iniciado en puerto ${PORT}`));
