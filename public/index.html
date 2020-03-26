@@ -7,6 +7,58 @@
     <title>File Metadata Microservice</title>
   </head>
   <body>
-    <h1>hola</h1>
+    <header>
+      <h1>File Metadata Microservice</h1>
+      <p class="lead">
+        Este proyecto forma parte del programa APIs and Microservices de
+        FreeCodeCamp
+      </p>
+      <p>Ver <a href="#">código fuente</a> del proyecto</p>
+      <hr />
+    </header>
+    <div class="container">
+      <section class="info">
+        <h2>Información</h2>
+        <ol>
+          <li>Permite subir un archivo mediante un formulario</li>
+          <li>
+            Cuando se envia el formulario devuelve un JSON con el nombre del
+            archivo y el tamaño en bites
+          </li>
+        </ol>
+      </section>
+      <section class="upload">
+        <h2>Subir Archivo</h2>
+        <form
+          action="/api/fileinfo"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <label for="upfile">Elige un archivo</label>
+          <input type="file" name="upfile" />
+          <input type="submit" value="Subir" />
+        </form>
+      </section>
+    </div>
+    <footer class="bg-light">
+      <div class="container py-1">
+        <div class="social">
+          <a href="https://github.com/cristianjova" target="_blank"
+            ><img src="/img/logo.png" alt="GitHub"
+          /></a>
+          <a href="https://www.twitter.com/cristian_jova13/" target="_blank"
+            ><img src="/img/twitter.png" alt="Twitter"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/cristian-jovanovich/"
+            target="_blank"
+            ><img src="/img/linkedin.png" alt="Linkedin"
+          /></a>
+        </div>
+      </div>
+      <p class="lead bg-primary py-1">
+        <strong>Creado por Cristian Jovanovich</strong>
+      </p>
+    </footer>
   </body>
 </html>
