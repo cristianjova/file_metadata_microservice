@@ -7,36 +7,37 @@
     <title>File Metadata Microservice</title>
   </head>
   <body>
-    <header>
-      <h1>File Metadata Microservice</h1>
-      <p class="lead">
-        Este proyecto forma parte del programa APIs and Microservices de
-        FreeCodeCamp
-      </p>
-      <p>Ver <a href="#">código fuente</a> del proyecto</p>
-      <hr />
-    </header>
     <div class="container">
-      <section class="info">
-        <h2>Información</h2>
-        <ol>
+      <header>
+        <h1 class="x-large text-center">File Metadata Microservice</h1>
+        <p class="lead">
+          Este proyecto forma parte del programa APIs and Microservices de
+          FreeCodeCamp
+        </p>
+        <p class="my-1">Ver <a href="#">código fuente</a> del proyecto</p>
+        <hr />
+      </header>
+      <section class="info py-1 my-1">
+        <h2 class="large text-center my-1">Información</h2>
+        <ul>
           <li>Permite subir un archivo mediante un formulario</li>
           <li>
             Cuando se envia el formulario devuelve un JSON con el nombre del
             archivo y el tamaño en bites
           </li>
-        </ol>
+        </ul>
       </section>
-      <section class="upload">
-        <h2>Subir Archivo</h2>
+      <section class="upload p-1 bg-light">
+        <h2 class="large text-center my-1">Subir Archivo</h2>
         <form
           action="/api/fileinfo"
           method="POST"
           enctype="multipart/form-data"
         >
-          <label for="upfile">Elige un archivo</label>
-          <input type="file" name="upfile" />
-          <input type="submit" value="Subir" />
+          <div class="form-group">
+            <input class="text-dark" type="file" name="upfile" />
+          </div>
+          <input type="submit" value="Subir" class="btn btn-dark btn-large" />
         </form>
       </section>
     </div>
@@ -56,7 +57,7 @@
           /></a>
         </div>
       </div>
-      <p class="lead bg-primary py-1">
+      <p class="lead bg-dark py-1">
         <strong>Creado por Cristian Jovanovich</strong>
       </p>
     </footer>
